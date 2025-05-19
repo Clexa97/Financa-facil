@@ -1,7 +1,7 @@
 # Finança Fácil – WebApp de Controle Financeiro Pessoal
 
 **Entrega da Versão 1**  
-Projeto desenvolvido pelos alunos **Juliana Ransani** e **Nathan Alvez**  
+Projeto desenvolvido pelos alunos **Juliana Ransani** e **Nathan Alves**  
 Disciplina: Desenvolvimento de Aplicações Web – IFPR
 
 ---
@@ -26,7 +26,7 @@ O projeto **Finança Fácil** é uma plataforma Web desenvolvida com Java e Spri
 
 ## 🛠️ Tecnologias e Ferramentas
 
-- **Java 17** (ou superior)
+- **Java 24**
 - **Spring Boot 3.4.5**
 - **Spring Web** – criação da API REST
 - **Spring Data JPA** – persistência com Hibernate
@@ -109,4 +109,4 @@ O projeto **Finança Fácil** é uma plataforma Web desenvolvida com Java e Spri
 Caso queira mais informações, fale com os autores:
 
 - Juliana Ransani  
-- Nathan Alvez
+- Nathan Alves

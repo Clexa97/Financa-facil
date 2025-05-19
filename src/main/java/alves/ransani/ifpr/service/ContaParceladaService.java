@@ -23,17 +23,15 @@ public class ContaParceladaService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    @Autowired
-    private ContaParceladaMapper contaParceladaMapper;
 
     public ContaParceladaResponseDto criarContaParcelada(ContaParceladaCreateDto dto) {
         Usuario usuario = usuarioRepository.findById(dto.getUsuarioId())
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
 
-        ContaParcelada conta = contaParceladaMapper.toEntity(dto);
+        ContaParcelada conta = ContaParceladaMapper.toEntity(dto);
         conta.setUsuario(usuario);
         ContaParcelada salva = contaParceladaRepository.save(conta);
-        return contaParceladaMapper.toResponseDto(salva);
+        return ContaParceladaMapper.toResponseDto(salva);
     }
 
     public List<ContaParceladaResponseDto> listarTodas() {
@@ -53,7 +51,7 @@ public class ContaParceladaService {
             conta.setQuantidadeParcelas(dto.getQuantidadeParcelas());
             conta.setDataInicio(dto.getDataInicio());
             ContaParcelada atualizada = contaParceladaRepository.save(conta);
-            return contaParceladaMapper.toResponseDto(atualizada);
+            return ContaParceladaMapper.toResponseDto(atualizada);
         });
     }
 
