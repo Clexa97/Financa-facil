@@ -6,9 +6,9 @@ import lombok.*;
 import java.time.LocalDate;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter @Setter
 public class Alerta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,4 +22,5 @@ public class Alerta {
 
     @ManyToOne
     private Usuario usuario;
+
 }

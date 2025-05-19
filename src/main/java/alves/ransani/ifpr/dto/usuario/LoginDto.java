@@ -1,12 +1,11 @@
 package alves.ransani.ifpr.dto.usuario;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class LoginDto {
     private String email;
     private String senha;

@@ -15,4 +15,5 @@ public class ContaParceladaCreateDto {
     private BigDecimal valorTotal;
     private int quantidadeParcelas;
     private LocalDate dataInicio;
+    private Long usuarioId;
 }

@@ -9,4 +9,5 @@ import java.util.List;
 public interface ParcelaRepository extends JpaRepository<Parcela, Long> {
     List<Parcela> findByVencimentoBefore(LocalDate data);
     List<Parcela> findByVencimentoBetween(LocalDate inicio, LocalDate fim);
+    List<Parcela> findByDataVencimentoBetween(LocalDate inicio, LocalDate fim);
 }

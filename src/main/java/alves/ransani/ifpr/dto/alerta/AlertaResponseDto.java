@@ -1,14 +1,13 @@
 package alves.ransani.ifpr.dto.alerta;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class AlertaResponseDto {
     private Long id;
     private String mensagem;

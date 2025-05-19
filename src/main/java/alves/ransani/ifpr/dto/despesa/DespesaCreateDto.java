@@ -1,14 +1,13 @@
 package alves.ransani.ifpr.dto.despesa;
 
 import alves.ransani.ifpr.dao.Despesa;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class DespesaCreateDto {
